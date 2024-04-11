@@ -1,0 +1,107 @@
+
+
+.body{
+    background-image: url("image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    height:100vh;
+       
+  }
+  .logo{
+    margin: 20px auto;
+    width: fit-content;
+
+  }
+  .container2 {
+    display: grid;
+   
+    max-width: 400px;
+    margin: 20px auto;
+   
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(245, 229, 13, 0.842);
+    background-color: #817a7a8f;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+   
+  }
+ 
+  .form-control {
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+    background-color:rgb(240, 221, 187);
+    
+  }
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  .footer1 {
+    background-color:transparent;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+   
+
+  }
+  .footer1 p {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .mt-3 {
+    margin: 0 auto;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+  }
+  .mt-3>a{
+    color: black;
+  }
+  h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  @media (max-width: 768px) {
+    
+      .footer1 h3 {
+        font-size: 12px;
+        margin-top: 30px;
+      }
+      .logo img{
+       width: 150px;
+      }
+      .container2 {
+        width: 80%;
+        height: 80%;
+        margin:0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: transparent;
+        
+      }
+      .form-control {
+        border-radius: 5px;
+        width: 200px;
+        margin: 0 auto;
+        background-color:rgb(240, 221, 187);
+      
+  }
+.body{
+    height: fit-content;
+}}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='viewfraud.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='comman.css') }}">
+   
+</head>
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+               <div class="col1">
+                <img src ="{{ url_for('static', filename='logo.png') }}" width="200">
+               </div>
+               <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </div>
+               <div class="col2">
+                <a href="/home"> <button>HOME</button></a>
+                <a href="/report"> <button>REPORT FRAUD</button></a>
+                <a href="/postnew"><button>POST</button></a>
+                <a href="/aboutus"> <button>ABOUT US</button></a>
+                     
+                     
+            </div>
+           </div>
+        </div>
+        </nav>
+      </header>
+      <body>
+        <script>
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                document.querySelector('.col2').classList.toggle('active');
+            });
+            </script>
+    <main >
+        <div id="google_translate_element"></div>
+        <script>
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <section class="section">
+            <h3>{{post.title}}</h3><br>
+            <p>post by DSS on {{post.date}}</p><br>
+            <p id="p2">{{post.content}}</p>
+            <img src="{{post.image}}">
+			
+        </section>
+    </main>
+	
+
+    <footer>
+      
+        <h3>CYBER CRIME HELPLINE NO :1930</h3>
+        <div class="icon">
+        
+        <a href="https://www.facebook.com/photo/?fbid=352420613843802&set=a.163197829432749" ><img class="img " src="{{ url_for('static', filename='fb.jpg') }}" height="50px"></a>
+          <a href="https://www.instagram.com/CyberDostI4C/" ><img class="img "src="{{ url_for('static', filename='insta.jpg') }}" height="50px"></a>
+          <a href="https://www.whatsapp.com/channel/0029Va3VAOY8fewrOtXqMw1V" ><img class="img "src="{{ url_for('static', filename='wp.jpg') }}" height="50px"></a>
+          <a href="https://t.me/cyberdosti4c" ><img class="img "src="{{ url_for('static', filename='tg.jpg') }}" height="50px"></a>
+          <a href="https://www.youtube.com/c/CyberDostI4C" ><img class="img "src="{{ url_for('static', filename='yt.jpg') }}" height="50px"></a>
+        </div>
+        <p>&copy; 2024 DIGITAL SENTINEL SQUAD. All rights reserved.</p><br>
+    </footer>
+</body>
+
+</html>

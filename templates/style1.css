@@ -1,0 +1,33 @@
+.button{
+    width:400px;
+    height:400px;
+    background-color: black;
+    align-items: center;
+    margin: 0 auto;
+}
+#x1{
+    color: red;
+    background-color: blue;
+    margin:160px;
+    font-size: 40px;
+    border-radius:20px;
+    animation: shivam  1.5s rotate infinite;
+    
+
+}
+@keyframes shivam{
+    0%{
+        box-shadow:0 0 0 0 red 0.7;
+    }
+    50%{
+        box-shadow:0 0 10px 20px green 0.7;
+    }
+    100%{
+        box-shadow:0 0 0 0 brown 0.7;
+    }
+}
+#x1:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Fraud</title>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+<div class="container">
+    <header>Report Fraud</header>
+    <form action="/submit_form" method="POST">
+        <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6Lf0FbYpAAAAAGgCQMRxOCaL3NF5XolmmwvUFy56"></div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>

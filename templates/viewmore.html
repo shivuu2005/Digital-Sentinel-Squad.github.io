@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='viewmore.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='comman.css') }}">
+</head>
+<header>
+  <nav class="navbar">
+      <div class="container">
+             <div class="col1">
+              <img src ="{{ url_for('static', filename='logo.png') }}" width="200">
+             </div>
+             <div class="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+              
+          </div>
+             <div class="col2">
+              <a href="/home"> <button>HOME</button></a>
+                <a href="/report"> <button>REPORT FRAUD</button></a>
+                <a href="/postnew"><button>POST</button></a>
+                <a href="/aboutus"> <button>ABOUT US</button></a>
+                   
+          </div>
+         </div>
+      </div>
+      </nav>
+    </header>
+    <script>
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+          document.querySelector('.col2').classList.toggle('active');
+      });
+      </script>
+    <body>
+           <div class="row5">
+            <div class="col6">
+              <h1>AWARENESS TIPS FOR DIGITAL FRAUDS</h1>
+              <div class="paragraph-container2">
+                <p class="paragraph2">Being aware of digital fraud is crucial in today's interconnected world. Here are some tips to help you stay vigilant and protect yourself:</p>
+                <ol class="fraud-list2">
+                  <li><b>Educate Yourself:</b> Stay informed about the various types of digital fraud such as phishing, identity theft, fake websites, etc. Understand how these scams work and what red flags to look out for.</li>
+                  <li><b>Verify Website Authenticity:</b> Always double-check the website URL before entering any personal or financial information. Look for HTTPS encryption, a padlock symbol, and verify the site's legitimacy by researching the company or organization.</li>
+                  <li><b>Use Strong Passwords:</b>Create strong, unique passwords for each of your online accounts and change them regularly. Consider using a reputable password manager to generate and store your passwords securely.</li>
+                  <li><b>Enable Two-Factor Authentication (2FA):</b> Add an extra layer of security to your accounts by enabling 2FA whenever possible. This typically requires entering a code sent to your mobile device or email in addition to your password when logging in.</li>
+                  <li><b>Beware of Phishing Emails and Messages: </b>Be cautious of unsolicited emails, text messages, or social media messages asking for personal or financial information. Avoid clicking on links or downloading attachments from unknown sources.</li>
+      
+                  <li><b>Verify Requests for Personal Information: </b>Legitimate organizations will rarely ask for sensitive information like passwords, Social Security numbers, or credit card details via email or over the phone. Verify the identity of the requester before providing any personal information.</li>
+            
+                  <li><b>Monitor Your Accounts Regularly:</b> Keep a close eye on your bank statements, credit card transactions, and other financial accounts for any unauthorized or suspicious activity. Report any discrepancies to your financial institution immediately.</li>
+            
+                  <li><b>Secure Your Devices: </b>Install reputable antivirus and anti-malware software on your devices and keep them up to date. Be cautious when downloading apps or software from untrusted sources, and regularly update your operating system and applications with the latest security patches.</li>
+                    
+                  <li><b>Be Skeptical of Too-Good-to-Be-True Offers: </b>Exercise caution when dealing with offers or deals that seem too good to be true, especially if they require you to provide personal or financial information upfront.</li>
+                    <li><b>Trust Your Instincts:</b> If something feels off or suspicious, trust your instincts and take the necessary precautions. It's better to err on the side of caution than to fall victim to digital fraud.</li>
+                  </ol>
+    
+              </div>
+            </div>
+          </div>
+          <footer>
+      
+            <h3>CYBER CRIME HELPLINE NO :1930</h3>
+            <div class="icon">
+            
+            <a href="https://www.facebook.com/photo/?fbid=352420613843802&set=a.163197829432749" ><img class="img " src="{{ url_for('static', filename='fb.jpg') }}" height="50px"></a>
+              <a href="https://www.instagram.com/CyberDostI4C/" ><img class="img "src="{{ url_for('static', filename='insta.jpg') }}" height="50px"></a>
+              <a href="https://www.whatsapp.com/channel/0029Va3VAOY8fewrOtXqMw1V" ><img class="img "src="{{ url_for('static', filename='wp.jpg') }}" height="50px"></a>
+              <a href="https://t.me/cyberdosti4c" ><img class="img "src="{{ url_for('static', filename='tg.jpg') }}" height="50px"></a>
+              <a href="https://www.youtube.com/c/CyberDostI4C" ><img class="img "src="{{ url_for('static', filename='yt.jpg') }}" height="50px"></a>
+            </div>
+            <p>&copy; 2024 DIGITAL SENTINEL SQUAD. All rights reserved.</p><br>
+        </footer>
+          
+    </nav>    
+</body>
+</html>

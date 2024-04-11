@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Post</title>
+    <!-- Link Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    
+    <!-- Custom CSS -->
+    <style>
+      .upload-container {
+        max-width: 600px;
+        margin: 100px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .upload-icon {
+        font-size: 50px;
+        color: #007bff;
+        margin-bottom: 20px;
+      }
+      
+    </style>
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="upload-container">
+        <div class="text-center">
+          <i class="fas fa-upload upload-icon"></i>
+        </div>
+        <h1 class="text-center mb-4">Upload Post</h1>
+        <form action="/submit_post" method="post">
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              name="title"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="slug">Slug:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="slug"
+              name="slug"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea
+              class="form-control"
+              id="content"
+              name="content"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="date"
+              name="date"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Upload
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

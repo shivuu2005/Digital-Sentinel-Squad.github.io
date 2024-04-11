@@ -1,0 +1,33 @@
+body{
+ background-color: rgb(61, 73, 77);   
+}
+fieldset{
+    align-items: center;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+    color:white;
+    border:rgb(0, 0, 0) solid 2px;
+    padding-top: 10px;
+    margin-top: 210px;
+    background: linear-gradient(135deg,rgb(45, 56, 38),rgb(38, 43, 57));
+
+}
+article{
+    margin: 10px;
+    color: rgb(253, 253, 253);
+    width: 40px;
+    height: 40px;
+    
+}
+input{
+     
+    box-shadow:2px 3px 4px rgb(216, 198, 80);
+    cursor: pointer;
+    background-color: rgb(165, 146, 182);
+}
+.z{
+    display: block;
+    margin: 10px;
+    box-shadow:2px 3px 4px rgb(216, 198, 80);

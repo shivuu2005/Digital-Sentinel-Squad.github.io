@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='admindash.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='comman.css') }}"
+    />
+  </head>
+  <body class="body">
+    <div class="logo">
+      <img src="{{ url_for('static', filename='logo.png') }}" width="300" />
+    </div>
+
+    <div class="container2">
+      <div class="buttons-container">
+        <a href="/uploadpost" class="btn-custom"
+          ><i class="fas fa-cloud-upload-alt btn-icon"></i> Upload Post</a
+        >
+        <a href="/uploadvideo" class="btn-custom"
+        ><i class="fas fa-cloud-upload-alt btn-icon"></i> Upload Video</a
+      >
+        <a href="/adminpanel" class="btn-custom"
+          ><i class="fas fa-database btn-icon"></i>View Data</a
+        >
+		 <a href="/manageposts" class="btn-custom btn-logout"
+          ><i class="fas fa-list"></i> Manage Posts</a
+        >
+        <a href="/admin/logout" class="btn-custom btn-logout"
+          ><i class="fas fa-sign-out-alt btn-icon"></i> Logout</a
+        >
+		
+      </div>
+    </div>
+    
+    <footer class="footer1">
+      <h3>CYBER CRIME HELPLINE NO :1930</h3>
+      <div class="icon">
+        <a
+          href="https://www.facebook.com/photo/?fbid=352420613843802&set=a.163197829432749"
+          ><img
+            class="img"
+            src="{{ url_for('static', filename='fb.jpg') }}"
+            height="50px"
+        /></a>
+        <a href="https://www.instagram.com/CyberDostI4C/"
+          ><img
+            class="img"
+            src="{{ url_for('static', filename='insta.jpg') }}"
+            height="50px"
+        /></a>
+        <a href="https://www.whatsapp.com/channel/0029Va3VAOY8fewrOtXqMw1V"
+          ><img
+            class="img"
+            src="{{ url_for('static', filename='wp.jpg') }}"
+            height="50px"
+        /></a>
+        <a href="https://t.me/cyberdosti4c"
+          ><img
+            class="img"
+            src="{{ url_for('static', filename='tg.jpg') }}"
+            height="50px"
+        /></a>
+        <a href="https://www.youtube.com/c/CyberDostI4C"
+          ><img
+            class="img"
+            src="{{ url_for('static', filename='yt.jpg') }}"
+            height="50px"
+        /></a>
+      </div>
+      <p>&copy; 2024 DIGITAL SENTINEL SQUAD. All rights reserved.</p>
+      <br />
+    </footer>
+    </body>
+  
+
+</html>

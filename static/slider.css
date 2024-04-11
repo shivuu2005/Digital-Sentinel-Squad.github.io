@@ -1,0 +1,28 @@
+.a {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: aqua;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.b {
+  height: 300px;
+  width: 300px;
+  background-color: salmon;
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  padding: 30px;
+}
+header {
+  margin: 0 auto;
+  text-align: center;
+}

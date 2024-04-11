@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Details</title>
+    <!-- Link Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #343a40;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #dee2e6;
+      }
+      th {
+        background-color: #007bff;
+        color: #fff;
+      }
+      tbody tr:hover {
+        background-color: #f8f9fa;
+      }
+      .icon {
+        font-size: 20px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Details <i class="fas fa-users icon"></i></h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th><i class="fas fa-sort-numeric-down icon"></i> S.NO</th>
+            <th><i class="fas fa-user icon"></i> First Name</th>
+            <th><i class="fas fa-user icon"></i> Last Name</th>
+            <th><i class="fas fa-envelope icon"></i> Email</th>
+            <th><i class="fas fa-phone icon"></i> Phone</th>
+            <th><i class="fas fa-calendar-alt icon"></i> Date of Birth</th>
+            <th><i class="fas fa-venus-mars icon"></i> Gender</th>
+            <th><i class="fas fa-comment icon"></i> Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in userdetails %}
+          <tr>
+            <td>{{ user.sno }}</td>
+            <td>{{ user.firstname }}</td>
+            <td>{{ user.lastname }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phone }}</td>
+            <td>{{ user.dob }}</td>
+            <td>{{ user.gender }}</td>
+            <td>{{ user.message }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

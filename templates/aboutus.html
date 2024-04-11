@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Advocates Against Digital Fraud</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='aboutus.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='comman.css') }}">
+</head>
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+               <div class="col1">
+                <img src ="{{ url_for('static', filename='logo.png') }}" width="200">
+               </div>
+               <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </div>
+               <div class="col2">
+                
+                <a href="/home"> <button>HOME</button></a>
+                <a href="/report"> <button>REPORT FRAUD</button></a>
+                <a href="/postnew"><button>POST</button></a>
+                <a href="/aboutus"> <button>ABOUT US</button></a>
+                     
+                     
+            </div>
+           </div>
+        </div>
+        </nav>
+      </header>
+      <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.col2').classList.toggle('active');
+        });
+        </script>
+      <body>
+   <h1 id="heading">ABOUT US</h1>
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>At DSS, we are dedicated to fostering a safer digital environment for all. Our primary objectives include:</p>
+        <ol>
+            <li><strong>Raising Awareness:</strong> We strive to educate individuals and communities about the various forms of digital fraud.</li>
+            <li><strong>Providing Resources:</strong> Our platform serves as a comprehensive resource hub, offering practical tips, guides, and tools to enhance digital literacy and cybersecurity.</li>
+            <li><strong>Advocating for Change:</strong> We collaborate with policymakers, law enforcement agencies, and industry stakeholders to develop proactive strategies for combating digital fraud and enhancing consumer protection.</li>
+        </ol>
+    </section>
+
+    <section id="quick-police-access">
+        <h2>Quick Police Access Mechanism</h2>
+        <p>In addition to raising awareness and providing educational resources, DSS is committed to facilitating swift access to law enforcement authorities in cases of digital fraud.</p>
+        <p>Through our Quick Police Access Mechanism, individuals can:</p>
+        <ol>
+            <li><strong>Report Incidents:</strong> We offer a streamlined platform for reporting digital fraud incidents directly to law enforcement agencies.</li>
+            <li><strong>Access Support Services:</strong> Victims of digital fraud often require immediate assistance and support. Through our network of partner organizations and support services, we connect individuals with relevant resources.</li>
+            <li><strong>Advocate for Justice:</strong> DSS is committed to advocating for the rights of victims and ensuring that perpetrators of digital fraud are held accountable for their actions.</li>
+        </ol>
+    </section>
+
+    <section id="join-us">
+        <h2>Join Us in the Fight Against Digital Fraud</h2>
+        <p>Whether you're an individual seeking to protect yourself online or a concerned citizen passionate about promoting cybersecurity awareness, there are many ways to get involved:</p>
+        <ul>
+            <li><strong>Stay Informed:</strong> Explore our website for valuable resources and stay updated on the latest developments in cybersecurity.</li>
+            <li><strong>Spread Awareness:</strong> Share our educational materials and awareness campaigns with your friends, family, and colleagues to help spread the word about digital fraud prevention.</li>
+            <li><strong>Report Incidents:</strong> If you've been a victim of digital fraud or have information about fraudulent activities, don't hesitate to utilize our Quick Police Access Mechanism to report the incident and seek assistance.</li>
+        </ul>
+    </section>
+    
+
+    <footer>
+      
+        <h3>CYBER CRIME HELPLINE NO :1930</h3>
+        <div class="icon">
+        
+        <a href="https://www.facebook.com/photo/?fbid=352420613843802&set=a.163197829432749" ><img class="img " src="{{ url_for('static', filename='fb.jpg') }}" height="50px"></a>
+          <a href="https://www.instagram.com/CyberDostI4C/" ><img class="img "src="{{ url_for('static', filename='insta.jpg') }}" height="50px"></a>
+          <a href="https://www.whatsapp.com/channel/0029Va3VAOY8fewrOtXqMw1V" ><img class="img "src="{{ url_for('static', filename='wp.jpg') }}" height="50px"></a>
+          <a href="https://t.me/cyberdosti4c" ><img class="img "src="{{ url_for('static', filename='tg.jpg') }}" height="50px"></a>
+          <a href="https://www.youtube.com/c/CyberDostI4C" ><img class="img "src="{{ url_for('static', filename='yt.jpg') }}" height="50px"></a>
+        </div>
+        <p>&copy; 2024 DIGITAL SENTINEL SQUAD. All rights reserved.</p><br>
+    </footer>
+    </nav>
+</body>
+
+</html>
